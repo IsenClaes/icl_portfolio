@@ -69,6 +69,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-## Modules to import to run the application
+# Modules to import to run the application
 
 npm install @sanity/client @sanity/image-url framer-motion node-sass react-icons
