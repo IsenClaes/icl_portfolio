@@ -17,6 +17,9 @@ import redux from "../assets/redux.png";
 import sass from "../assets/sass.png";
 import typescript from "../assets/typescript.png";
 import vue from "../assets/vue.png";
+import csharp from "../assets/csharp.png";
+import netcore from "../assets/netcore.png";
+import java from "../assets/java.png";
 
 import about01 from "../assets/about01.png";
 import about02 from "../assets/about02.png";
@@ -24,6 +27,8 @@ import about03 from "../assets/about03.png";
 import about04 from "../assets/about04.png";
 
 import profile from "../assets/profile.png";
+import profileBw from "../assets/profileBw.png";
+import profileColor from "../assets/profileColor.png";
 import circle from "../assets/circle.svg";
 import logo from "../assets/logo.png";
 
@@ -60,6 +65,8 @@ export default {
   about03,
   about04,
   profile,
+  profileBw,
+  profileColor,
   circle,
   logo,
   adidas,
@@ -69,4 +76,7 @@ export default {
   nb,
   skype,
   spotify,
+  csharp,
+  netcore,
+  java,
 };
