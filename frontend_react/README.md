@@ -71,4 +71,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 # Modules to import to run the application
 
-npm install @sanity/client @sanity/image-url framer-motion node-sass react-icons
+npm install @sanity/client @sanity/image-url framer-motion node-sass react-icons react-tooltip

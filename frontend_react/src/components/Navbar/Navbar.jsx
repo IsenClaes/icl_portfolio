@@ -20,7 +20,7 @@ const Navbar = () => {
           "work",
           "skills",
           "education",
-          "testimonials",
+          //"testimonial",
           "contact",
         ].map((item) => (
           <li className="app__flex p-text" key={`link-${item}`}>
@@ -46,7 +46,7 @@ const Navbar = () => {
                 "work",
                 "skills",
                 "education",
-                "testimonials",
+                //"testimonial",
                 "contact",
               ].map((item) => (
                 <li key={item}>
