@@ -10,5 +10,10 @@ Now you can do the following things:
 
 # Modules to import to run the application
 
-npm install -g @sanity/cli
-sanity init --coupon javascriptmastery2022
+`npm install -g @sanity/cli`
+`sanity init --coupon javascriptmastery2022`
+
+`sanity start`
+
+if `sanity start` does not work, you might need to change your execution policies.
+See the section about [execution policies](https://go.microsoft.com/fwlink/?LinkID=135170) for more information.
