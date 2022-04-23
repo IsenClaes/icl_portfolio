@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import emailjs from "emailjs-com";
 
 import { images } from "../../constants";
 import { AppWrap, MotionWrap } from "../../wrapper";
 import { client } from "../../client";
+import { emailkeys } from "../../emailkeys";
 import "./Footer.scss";
 
 const Footer = () => {
@@ -31,8 +33,43 @@ const Footer = () => {
       message: formData.message,
     };
 
-    client
+    const mailParameters = {
+      from_name: formData.username,
+      from_email: formData.email,
+      message: formData.message,
+    };
+
+    /*client
       .create(contact)
+      .then(() => {
+        setLoading(false);
+        setIsFormSubmitted(true);
+      })
+      .catch((err) => console.log(err));
+      
+    emailjs
+      .send(
+        emailkeys.serviceId,
+        emailkeys.templateId,
+        mailParameters,
+        emailkeys.publicKey
+      )
+      .then(() => {
+        setLoading(false);
+        setIsFormSubmitted(true);
+      })
+      .catch((err) => console.log(err));  
+    */
+
+    var clientPromise = client.create(contact);
+    var mailPromise = emailjs.send(
+      emailkeys.serviceId,
+      emailkeys.templateId,
+      mailParameters,
+      emailkeys.publicKey
+    );
+
+    Promise.all([clientPromise, mailPromise])
       .then(() => {
         setLoading(false);
         setIsFormSubmitted(true);
